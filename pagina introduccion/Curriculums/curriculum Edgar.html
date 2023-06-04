@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        li {
+            display: inline-block;
+            margin-right: 20px;
+        }
+
+        a {
+            text-decoration: none;
+            color: #333;
+        }
+
+        h1 {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+
+        p {
+            margin-bottom: 20px;
+        }
+
+        hr {
+            border: none;
+            border-top: 1px solid #ccc;
+            margin: 30px 0;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+        }
+
+        th, td {
+            border: 1px solid #ccc;
+            padding: 10px;
+        }
+
+        th {
+            background-color: #f2f2f2;
+        }
+
+        #Habilidades {
+            margin-top: 30px;
+        }
+
+        #Educación {
+            margin-top: 30px;
+        }
+
+        #Perfiles {
+            margin-top: 30px;
+        }
+
+        #Contactar {
+            margin-top: 30px;
+        }
+
+        form {
+            margin-top: 20px;
+        }
+
+        label, select, input, textarea, button {
+            display: block;
+            margin-bottom: 10px;
+        }
+
+        select, input, textarea {
+            width: 100%;
+            padding: 5px;
+            font-size: 16px;
+        }
+
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            background-color: #333;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #555;
+        }
+    </style>
+</head>
+<body>
+    <ul>
+        <li><a href="#Habilidades">Habilidades y conocimientos</a></li>
+        <li><a href="#Educación">Educación</a></li>
+        <li><a href="#Contactar">Contactar</a></li>
+    </ul>
+
+    <h1>Edgar Roberto Quiñonez Herrea</h1>
+
+    <p>Desde pequeño he teneido una fascinación por la tecnología, aprendí a usar la computadora con tan solo 3 años
+         y desde entonces no he parado, me apasiona el ensamblar computadoras, así mismo el construir y deconstruir cosas.</p>
+
+    <hr>
+
+    <h1 id="Habilidades">Habilidades y conocimientos</h1>
+    <ul>
+        <li><b>Desarrollo Web:</b> HTML5 Básico, JavaScript Básico, Phyton nivel medio.</li>
+        <li><b>Idiomas:</b> Español e inglés nivel avanzado.</li>
+        <li><b>Diseño:</b> Photoshop Nivel Basico.</li>
+        <li><b>Estructura y desarrollo de red:</b> Curso Introductorio de Manejo de Redes otorgado por Oracle.</li>
+    </ul>
+
+    <hr>
+
+    <h1 id="Educación">Educación</h1>
+    <table>
+        <tr>
+            <th>Grado Obtenido</th>
+            <th>Establecimiento</th>
+            <th>Promoción</th>
+        </tr>
+        <tr>
+            <td>Nivel PrePrimario</td>
+            <td>Colegio Juan Pablo Segundo Jalapa</td>
+            <td>2008-2009</td>
+        </tr>
+        <tr>
+            <td>Nivel Primario</td>
+            <td>Escuela Urbana Mixta J.M. Regional Monjas Jalapa"</td>
+            <td>2010</td>
+        </tr>
+        <tr>
+            <td>Nivel Primario</td>
+            <td>Colegio Particular Mixto Liceo Jalapa</td>
+            <td>2011-2015</td>
+        </tr>
+        <tr>
+            <td>Nivel Medio</td>
+            <td>INEBE Con Orientación Ocupacional Dr. Silvano Antonio Carías Recinos</td>
+            <td>2016-2018</td>
+        </tr>
+        <tr>
+            <td>Nivel Diversificado</td>
+            <td>Instituto Privado De Educación Diversificada "El Porvenir"</td>
+            <td>2019-2020</td>
+        </tr>
+    </table>
+
+
+    <h1 id="Contactar">Contactar</h1>
+
+    <form action="demo.php" method="GET">
+        <label for="to">Para:</label>
+        <input id="to" type="email">
+        <label for="topic">Temática:</label>
+        <select id="topic" name="topic">
+            <option>-- Elige un tema --</option>
+            <option value="proposal">Propuesta</option>
+            <option value="report">Reporte</option>
+            <option value="other">Otro</option>
+        </select>
+        <label for="subject">Asunto:</label>
+        <input id="subject" name="subject" type="text">
+        <label for="body">Cuerpo:</label>
+        <textarea id="body" name="body"></textarea>
+        <button type="submit">Enviar</button>
+    </form>
+</body>
+</html>

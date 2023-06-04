@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio</title>
+  <style>
+    /* Estilos generales */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #130f40;
+      color: #34495e; /* Cambiar el color de los textos */
+    }
+  
+    nav ul li a {
+      color: #34495e; /* Cambiar el color de los enlaces de navegación */
+      text-decoration: none;
+    }
+  
+
+    /* Estilos para el encabezado */
+    header {
+      background-color: #F4F4F4;
+      color: #333;
+      padding: 20px;
+      text-align: center;
+    }
+
+    h1 {
+      margin: 0;
+    }
+
+    nav ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+    }
+
+    nav ul li {
+      margin-right: 20px;
+    }
+
+    nav ul li a {
+      color: #333;
+      text-decoration: none;
+    }
+
+    /* Estilos para las secciones */
+    section {
+      padding: 50px;
+    }
+
+    section h2 {
+      margin-top: 0;
+    }
+
+    /* Estilos para los iframes */
+    iframe {
+      display: block; /* Mostrar el iframe como un bloque */
+      width: 100%; /* Asegurar que el iframe ocupe todo el ancho disponible */
+      border: none; /* Quitar el borde predeterminado del iframe */
+    }
+
+    /* Estilos para la sección de Chat en Vivo */
+    #chat {
+      height: 713px; /* Establecer una altura fija de 713px */
+    }
+
+    /* Estilos para el pie de página */
+    footer {
+      background-color: #F4F4F4;
+      color: #333;
+      padding: 20px;
+      text-align: center;
+    }
+
+    /* Estilos para las animaciones */
+    .fade-in {
+      opacity: 0;
+      animation: fadeInAnimation ease-in 1s forwards;
+    }
+
+    @keyframes fadeInAnimation {
+      0% {
+        opacity: 0;
+      }
+      100% {
+        opacity: 1;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Portfolio</h1>
+    <nav>
+      <ul>
+        <li><a href="#inicio">Inicio</a></li>
+        <li><a href="#chat">Chat en Vivo</a></li>
+        <li><a href="#calculadora">Calculadora</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="inicio" class="fade-in">
+    <h2>Curriculum integrante 1</h2>
+    <h1>
+
+      <iframe src="file:///C:/Users/edrob/OneDrive/Escritorio/pagina%20introduccion/Curriculums/Curriculum%20Yeilin.html" frameborder="0" style="height: 713px;"></iframe>
+    </h1>
+    <h2>Curriculum integrante 2</h2>
+    <h1>
+
+      <iframe src="file:///C:/Users/edrob/OneDrive/Escritorio/pagina%20introduccion/Curriculums/curriculum%20Edgar.html#Contactar" frameborder="0" style="height: 713px;"></iframe>
+    </h1>
+  </section>
+  </section>
+
+  <section id="chat" class="fade-in">
+    <h2>Chat en Vivo</h2>
+    <iframe src="https://chatfirebase-ded52.web.app/" frameborder="0" style="height: 713px;"></iframe>
+  </section>
+
+  <section id="calculadora" class="fade-in">
+    <h2>Calculadora</h2>
+    <iframe src="file:///C:/Users/edrob/OneDrive/Escritorio/pagina%20introduccion/calculadora%20js%20css%20html/index.htm" frameborder="0" style="height: 613px;"></iframe>
+  </section>
+
+  <footer>
+    <p>Derechos de autor &copy; 2023 - Mi Portfolio</p>
+  </footer>
+
+  <script>
+    // Animación de fade-in al desplazarse a las secciones
+    const sections = document.querySelectorAll('section');
+
+    const fadeIn = () => {
+      sections.forEach(section => {
+        if (section.getBoundingClientRect().top < window.innerHeight) {
+          section.classList.add('fade-in');
+        }
+      });
+    };
+
+    window.addEventListener('scroll', fadeIn);
+    window.addEventListener('load', fadeIn);
+  </script>
+</body>
+</html>

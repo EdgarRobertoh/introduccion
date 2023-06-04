@@ -1,0 +1,81 @@
+/* Estilos generales */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #0c2461; /* Persian Blue */
+}
+
+h1, h2 {
+  color:#2c3e50; /* Cornflower Blue */
+}
+
+a {
+  color: #6a89cc; /* Cornflower Blue */
+  text-decoration: none;
+}
+
+header {
+  background-color: #ffeaa7; /* White */
+  padding: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline;
+  margin-right: 10px;
+}
+
+nav ul li a {
+  font-weight: bold;
+}
+
+section {
+  padding: 40px;
+  background-color: #ffffff; /* White */
+  margin-bottom: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+footer {
+  background-color: #6a89cc; /* Cornflower Blue */
+  color: #ffffff; /* White */
+  padding: 20px;
+  text-align: center;
+}
+
+/* Estilos específicos para cada sección */
+#inicio {
+  text-align: center;
+}
+
+#chat iframe, #calculadora iframe {
+  width: 100%;
+  height: 400px;
+  border: none;
+}
+
+/* Media queries para hacer la UI responsiva */
+@media screen and (max-width: 768px) {
+  header {
+    text-align: center;
+  }
+
+  nav {
+    margin-top: 20px;
+  }
+
+  section {
+    padding: 20px;
+  }
+
+  #chat iframe, #calculadora iframe {
+    height: 300px;
+  }
+}
